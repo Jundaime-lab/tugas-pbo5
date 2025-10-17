@@ -1,0 +1,296 @@
+package Test_test;
+
+// ========================================
+// SOAL 1: Ilustrasi Operator Increment
+// ========================================
+class IncrementOperator {
+    public static void main(String[] args) {
+        System.out.println("=== SOAL 1: Ilustrasi Operator Increment ===");
+
+        int x = 5;
+
+        System.out.println("Nilai awal x: " + x);
+
+        // Post-increment (x++)
+        System.out.println("Post-increment (x++): " + (x++));
+        System.out.println("Nilai x setelah post-increment: " + x);
+
+        // Pre-increment (++x)
+        System.out.println("Pre-increment (++x): " + (++x));
+        System.out.println("Nilai x setelah pre-increment: " + x);
+
+        System.out.println();
+    }
+}
+
+//========================================
+// SOAL 2: Menghitung Has Persegi Panjang
+// ========================================
+class PersegiPanjang {
+
+    // void = tidak mengembalikan nilai apapun
+    public void hitungLuas(int panjang, int lebar) {
+        int hasil = panjang * lebar;
+        System.out.println("luas: " + hasil);
+    }
+    
+    public static void main(String[] args) {
+        // Membuat objek dari class PersegiPanjang
+        PersegiPanjang objek = new PersegiPanjang();
+        
+        int P = 50;
+        int L = 45;
+        
+        System.out.println("=== SOAL 2: luas Persegi Panjang ===");
+        System.out.println("Panjang: " + P);
+        System.out.println("Lebar: " + L);
+        
+        objek.hitungLuas(P, L);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 3: Persamaan Kuadrat
+// ========================================
+class PersamaanKuadrat {
+
+    public void hitung(int b, int a, int c) {
+        // Menghitung b kuadrat (b²)
+        int bKuadrat = b * b;
+        
+        // Menghitung 4ac
+        int empatAC = 4 * a * c;
+        
+        // Menghitung hasil akhir: b² - 4ac
+        int hasil = bKuadrat - empatAC;
+        
+        System.out.println("Hasil: " + hasil);
+    }
+    
+    public static void main(String[] args) {
+        PersamaanKuadrat objek = new PersamaanKuadrat();
+        
+        int b = 2;
+        int a = 10;
+        int c = 5;
+        
+        System.out.println("=== SOAL 3: Persamaan Kuadrat ===");
+        System.out.println("Rumus: b² - 4ac");
+        System.out.println("b = " + b);
+        System.out.println("a = " + a);
+        System.out.println("c = " + c);
+        
+        objek.hitung(b, a, c);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 4: Operasi Matematika
+// ========================================
+class OperasiMatematika {
+    
+    public void tambah(int x, int y) {
+        int hasil = x + y;
+        System.out.println("Penjumlahan: " + hasil);
+    }
+    
+    public void kurang(int x, int y) {
+        int hasil = x - y;
+        System.out.println("Pengurangan: " + hasil);
+    }
+    
+    public void kali(int x, int y) {
+        int hasil = x * y;
+        System.out.println("Perkalian: " + hasil);
+    }
+    
+    public void bagi(int x, int y) {
+        if (y != 0) {
+            int hasil = x / y;
+            System.out.println("Pembagian: " + hasil);
+        } else {
+            System.out.println("Error: Tidak bisa membagi dengan 0");
+        }
+    }
+    
+    public static void main(String[] args) {
+        OperasiMatematika objek = new OperasiMatematika();
+        
+        int x = 22;
+        int y = 33;
+        
+        System.out.println("=== SOAL 4: Operasi Matematika ===");
+        System.out.println("x = " + x);
+        System.out.println("y = " + y);
+        
+        // Panggil method satu per satu
+        objek.tambah(x, y);
+        objek.kurang(x, y);
+        objek.kali(x, y);
+        objek.bagi(x, y);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 5: Segitiga (Hitung Sisi Miring)
+// ========================================
+class Segitiga {
+   
+    public void hitungSisiMiring(int a, int b) {
+        int aKuadrat = a * a;
+        int bKuadrat = b * b;
+        int jumlah = aKuadrat + bKuadrat;
+        double sisiMiring = Math.sqrt(jumlah); //ini Math.sqrt, ini untuk hitung akar kuadrat, ini method dalam class math
+        
+        System.out.println("Sisi miring (c) = " + sisiMiring);
+    }
+    
+    public static void main(String[] args) {
+        Segitiga objek = new Segitiga();
+        
+        int a = 6;
+        int b = 8;
+        
+        System.out.println("=== SOAL 5: Segitiga ===");
+        System.out.println("Sisi a = " + a);
+        System.out.println("Sisi b = " + b);
+        
+        objek.hitungSisiMiring(a, b);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 6: Pythagoras (Mencari nilai c)
+// ========================================
+class Pythagoras {
+    
+    public void hitungC(int a, int b) {
+        double c = Math.sqrt((a * a) + (b * b));
+        System.out.println("Nilai c (rumus pythagoras): " + c);
+    }
+    
+    public static void main(String[] args) {
+        Pythagoras objek = new Pythagoras();
+        
+        int a = 6;
+        int b = 8;
+        
+        System.out.println("=== SOAL 6: Pythagoras ===");
+        System.out.println("Sisi a = " + a);
+        System.out.println("Sisi b = " + b);
+        
+        objek.hitungC(a, b);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 7: Mengubah String
+// ========================================
+class UbahString {
+    public static void main(String[] args) {
+        String a = "Saya Belajar Java";
+        String b = "Saya Belajar Java";
+        
+        System.out.println("=== SOAL 7: Mengubah String ===");
+        System.out.println("String awal:");
+        System.out.println("a = " + a);
+        System.out.println("b = " + b);
+        
+        String aKecil = a.toLowerCase();
+        String bBesar = b.toUpperCase();
+        
+        System.out.println("\nSetelah diubah ke huruf kecil:");
+        System.out.println("a = " + aKecil);
+        System.out.println("b = " + bBesar);
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 8: Konversi Waktu Bumi ke Matahari
+// ========================================
+class KonversiWaktu {
+    public static void main(String[] args) {
+        double jarakKm = 384400;
+        double kecepatanCahaya = 300000;
+        
+        double waktuDetik = jarakKm / kecepatanCahaya;
+        double waktuMenit = waktuDetik / 60;
+        double waktuJam = waktuMenit / 60;
+        
+        System.out.println("=== SOAL 8: Konversi Waktu ===");
+        System.out.println("Jarak bumi ke matahari: " + jarakKm + " km");
+        System.out.println("Kecepatan cahaya: " + kecepatanCahaya + " km/s");
+        System.out.println("\nWaktu tempuh cahaya:");
+        System.out.println("Dalam detik: " + waktuDetik + " detik");
+        System.out.println("Dalam menit: " + waktuMenit + " menit");
+        System.out.println("Dalam jam: " + waktuJam + " jam");
+        System.out.println();
+    }
+}
+
+// ========================================
+// SOAL 9: Konversi Suhu
+// ========================================
+class KonversiSuhu {
+    
+    public void celciusKeFahrenheit(double c) {
+        double f = (c * 9.0 / 5.0) + 32;
+        System.out.println("a. " + c + "°C = " + f + "°F");
+    }
+    
+    public void celciusKeReamur(double c) {
+        double r = c * 4.0 / 5.0;
+        System.out.println("b. " + c + "°C = " + r + "°R");
+    }
+    
+    public void fahrenheitKeReamur(double f) {
+        double r = (f - 32) * 4.0 / 9.0;
+        System.out.println("c. " + f + "°F = " + r + "°R");
+    }
+    
+    public static void main(String[] args) {
+        KonversiSuhu objek = new KonversiSuhu();
+        
+        double c = 10;
+        double f = 15;
+        
+        System.out.println("=== SOAL 9: Konversi Suhu ===");
+        
+        objek.celciusKeFahrenheit(c);
+        objek.celciusKeReamur(c);
+        objek.fahrenheitKeReamur(f);
+        System.out.println();
+    }
+}
+
+// ========================================
+// MAIN CLASS
+// ========================================
+public class LatihanJavaLengkap {
+    public static void main(String[] args) {
+        System.out.println("=======================================");
+        System.out.println("LATIHAN PRAKTIKUM JAVA - RUN SEMUA SOAL");
+        System.out.println("=======================================\n");
+        
+        // Ini untuk langsung jalankan semua soal
+        IncrementOperator.main(args);
+        PersegiPanjang.main(args);
+        PersamaanKuadrat.main(args);
+        OperasiMatematika.main(args);
+        Segitiga.main(args);
+        Pythagoras.main(args);
+        UbahString.main(args);
+        KonversiWaktu.main(args);
+        KonversiSuhu.main(args);
+        
+        System.out.println("=======================================");
+        System.out.println("SEMUA PROGRAM DIJALANKAN");
+        System.out.println("=======================================");
+    }
+}

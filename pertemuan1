@@ -1,0 +1,9 @@
+package pertemuan1;
+
+public class Informatika {
+    public static void main(String[] args) {
+        System.out.println("Saya (Muhammad rizkya nasti firmansyah), adalah mahasiswa teknik informatika ");
+        System.out.println("Jujur, Amanah, Fatonah, dan Tablig ");
+        System.out.println("Senang belajar PBO ");
+    }
+}

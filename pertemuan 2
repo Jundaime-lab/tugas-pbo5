@@ -1,0 +1,49 @@
+package pertemuan2;
+
+public class sukablyat {
+    public static void main(String[] args) {
+         byte a = 1;
+         short b = 2;
+         int c = 3;
+         long d = a + b;
+         
+         
+         float e = 3.14f;
+         double f = 5.203523424;
+         
+         char g = 'P';
+         char h = 65; // bisa ditambah misal : char h = 65 + 1;
+         
+         System.out.println("Hasil tambah : " + (a - b));
+         System.out.println("Hasil tambah : " + (a + b));
+         System.out.println("Hasil tambah : " + (a * b));
+         System.out.println("Hasil tambah : " + h);
+     
+         String nama = "Kratos";
+         //String nama = new String();
+         //nama = "locter";
+         
+         boolean status = true; // ini boolean
+         System.out.println("Status : " + status);
+         
+         String itos = String.valueOf(c); // teknik konversi
+         String dtos = String.valueOf(f);
+         System.out.println(itos + " " + dtos);
+         
+         int stoi = Integer.parseInt(itos);
+         System.out.println(stoi + 10);
+         
+         int dtoi = (int) f;
+         double itod = c;
+         System.out.println(itod);
+         System.out.println(dtoi++); //increment
+         System.out.println(dtoi);
+         
+         String nama1 = "COYY";
+         String nama2 = "cuyy";
+         System.out.println(nama1.toLowerCase());
+         System.out.println(nama2.toUpperCase());
+         System.out.println(nama1.length());
+         
+    }
+}
