@@ -1,0 +1,36 @@
+package pertemuan3;
+
+import java.util.Scanner;
+
+public class PraktikInOn {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        
+            String nama;
+            int umur;
+            double nilai;
+            char kelas;
+            boolean keaktifan;
+                    
+            /*System.out.print("Masukan Nama : ");
+            nama = input.nextLine();
+            System.out.print("Nama : " + nama);
+            
+            System.out.print("Masukan Umur : ");
+            umur = input.nextInt();
+            System.out.print("Nama : " + umur);
+            
+            System.out.print("Masukan Nilai : ");
+            nilai = input.nextDouble();
+            System.out.print("Nama : " + nilai);*/
+            
+            System.out.print("Masukan Kelas : ");
+            kelas = input.next().charAt(0);
+            System.out.print("Nama : " + kelas);
+            
+            System.out.print("Masukan Kelas : ");
+            keaktifan = input.nextBoolean();
+            System.out.print("Nama : " + keatifan);
+            
+    }
+}
